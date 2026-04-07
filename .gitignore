@@ -1,0 +1,113 @@
+# --- Project-specific ---
+# Product requirements (keep local only)
+PRD_V6/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs & editors ---
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Secrets & local env (never commit) ---
+.env
+.env.*
+!.env.example
+!.env*.example
+*.pem
+*.key
+secrets/
+
+# --- Node / React / Ant Design Pro (SPA) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+# Build & cache
+dist/
+build/
+.cache/
+.parcel-cache/
+.turbo/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Vite / Vitest (if used)
+coverage/
+*.local
+
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.envrc
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Packaging / installers (dist/build 与前端构建同名，均在仓库根/子包下忽略)
+*.egg
+*.egg-info/
+.eggs/
+wheels/
+*.manifest
+*.spec
+
+# Pytest / coverage / type checkers
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Celery
+celerybeat-schedule
+celerybeat-schedule.*
+celerybeat.pid
+
+# --- Databases & dumps (local dev) ---
+*.sqlite3
+*.db
+dump.rdb
+*.sql.gz
+pgdata/
+
+# --- Docker (local overrides & volumes) ---
+docker-compose.override.yml
+.docker/
+
+# --- Logs & runtime ---
+logs/
+*.log
+tmp/
+temp/
+.run/
+
+# --- WeChat mini program ---
+# npm 构建到小程序目录
+**/miniprogram_npm/
+# 开发者私有配置（常含敏感信息）
+**/project.private.config.json
+
+# --- Static uploads & generated reports (adjust if you version samples) ---
+uploads/
+media/
+storage/
+reports/output/
